@@ -10,10 +10,6 @@ JENKINS_PLUGINS=(\
     "email-ext/2.39"             \
     "git/2.3.4"                  \
     "git-client/1.16.1"          \
-    "greenballs/1.14"            \
-    "hipchat/0.1.8"              \
-    "job-dsl/1.29"               \
-    "logstash/1.0.3"             \
     "metadata/1.1.0b"            \
     "mesos/0.5.0"                \
     "monitoring/1.55.0"          \
@@ -77,7 +73,7 @@ done
 
 # Jenkins config files
 sed -i "s!_MAGIC_ZOOKEEPER_PATHS!${ZOOKEEPER_PATHS}!" config.xml
-sed -i "s!_MAGIC_REDIS_HOST!${REDIS_HOST}!" jenkins.plugins.logstash.LogstashInstallation.xml
+#sed -i "s!_MAGIC_REDIS_HOST!${REDIS_HOST}!" jenkins.plugins.logstash.LogstashInstallation.xml
 sed -i "s!_MAGIC_JENKINS_URL!http://${HOST}:${PORT}!" jenkins.model.JenkinsLocationConfiguration.xml
 
 # Start the master
