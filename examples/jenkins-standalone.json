@@ -1,6 +1,6 @@
 {
   "id": "jenkins",
-  "cmd": "git clone https://github.com/rji/jenkins-standalone && cd jenkins-standalone && ./jenkins-standalone.sh -z $(cat /etc/mesos/zk) -r redis.example.com",
+  "cmd": "git clone https://github.com/lechat/jenkins-standalone && cd jenkins-standalone && ./jenkins-standalone.sh -z $(cat /etc/mesos/zk) -r redis.example.com",
   "mem": 256.0,
   "cpus": 0.1,
   "disk": 0.0,
